@@ -2,8 +2,8 @@
     include 'includes/class-autoload.inc.php';
     require_once 'templates/header.php';
 
-    $sayHello = new Dbh;
-    echo $sayHello->name;
+    $name = new Dbh;
+    echo $name->name;
 ?>
     <!-- Verzend formulier -->
     <div class="container">

@@ -1,4 +1,4 @@
 <?php
     class Dbh {
-        public $name = 'hello world';
+        public $name = 'hello merde';
     }
