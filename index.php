@@ -1,34 +1,25 @@
 <?php
     include 'includes/class-autoload.inc.php';
     require_once 'templates/header.php';
-
-    $name = new Dbh;
-    echo $name->name;
 ?>
-    <!-- Verzend formulier -->
-    <div class="container">
-        <form class="needs-validation" method="post">
-            <div class="form-row">
-                <div style="margin-top: 50px" class="col-md-12 mb-4">
-                    <label for="validationCustom01">Voornaam</label>
-                    <input type="text" class="form-control" id="klantnaam" name="klantnaam"  placeholder="Voer uw voornaam in">
-                </div>
-                <div class="col-md-12 mb-4">
-                    <label for="validationCustom02">Adres</label>
-                    <input type="text" class="form-control" id="klantadres" name="klantadres" placeholder="Voer uw adres hier in">
-                </div>
-                <div class="col-md-12 mb-4">
-                    <label for="validationCustom03">Postcode</label>
-                    <input type="text" class="form-control" id="klantpostcode" name="klantpostcode" placeholder="Voer uw postcode hier in">
-                </div>
-                <div class="col-md-12 mb-4">
-                    <label for="validationCustom05">Plaats</label>
-                    <input type="text" class="form-control" id="klantplaats" name="klantplaats" placeholder="Voer uw plaats hier in">
-                </div>
+
+    <!-- Achtergrond foto -->
+    <header>
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+          <source src="./assets/videos/backgroundvideo.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100">
+          <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+              <h1 class="display-3">Garage</h1>
+              <p class="lead mb-0">repareer uw auto</p>
             </div>
-            <button class="btn btn-success" type="submit">Verzenden</button>
-        </form>
-     </div>
+          </div>
+        </div>
+    </header>
+    <!-- Einde achtergrond foto -->
+    
 <?php
     require_once 'templates/footer.php';
 ?>

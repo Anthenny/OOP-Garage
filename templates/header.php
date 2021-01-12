@@ -11,14 +11,14 @@
 <body>
         <!-- Navigatie menu -->
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <a class="navbar-brand" href="./auto.html">Garage</a>
+        <a class="navbar-brand" href="index.php">Garage</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#expandme">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="expandme" >
             <div class="navbar-nav">
-              <a href="#" class="nav-item nav-link">Create</a>
-              <a href="#" class="nav-item nav-link">Read</a>
+              <a href="create.php" class="nav-item nav-link">Create</a>
+              <a href="read.php" class="nav-item nav-link">Read</a>
               <a href="#" class="nav-item nav-link">Update</a>
               <a href="#" class="nav-item nav-link">Delete</a>
               <a href="#" class="nav-item nav-link">Login</a>
