@@ -16,11 +16,25 @@ class Read extends Dbh{
         echo "<td>"."Klantpostcode: " . $klant["klantpostcode"] . "</td>"."<br/>";
         echo "<td>"."Klantplaats: " . $klant["klantplaats"] . "</td>"."<br/>"."<br/>";
         echo "</br></div>";
-        echo "<div class='container'><button style='margin-top: -30px;'type='button' class='btn btn-success'><a style='color: white; text-decoration: none;' href='dbupdate.php?id=[klantid]'>Bewerken</a></button>";
-        echo "<button style='margin-left: 10px; margin-top: -30px;' type='button' class='btn btn-danger'><a style='color: white; text-decoration: none;' href='dbdelete.php?id=[klantid]'>Verwijderen</a></button></div>";
+        echo "<div class='container'><button style='margin-top: -30px;'type='button' class='btn btn-success'><a style='color: white; text-decoration: none;' href='editForm.php?id=[klantid]'>Bewerken</a></button>";
+        echo "<button style='margin-left: 10px; margin-top: -30px;' type='button' class='btn btn-danger'><a style='color: white; text-decoration: none;' href='create.php?id=[klantid]'>Verwijderen</a></button></div>";
         echo "</br>";
     }
   echo "</tabel>";
   echo "<div class='container'><style'margin-top: 20px; margin-bottom: 60px; margin-left: 20px' type='button' class='btn btn-primary'><a style='color: white; text-decoration: none' href='public/auto.html'>Terug naar menu</a></style></div>"; 
   }
+
+  public function addKlant($klantnaam, $klantadres, $klantpostcode, $klantplaats){
+    $sql = "INSERT INTO klantgegevens(klantnaam, klantadres, klantpostcode, klantplaats) VALUES (?, ?, ?, ?)";
+    $stmt = $this->connect()->prepare($sql);
+    $stmt->execute([$klantnaam, $klantadres, $klantpostcode, $klantplaats]);
+
+    header('location: read.php');
+
+  }
+
+
+
 }
+
+ 

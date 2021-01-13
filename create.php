@@ -4,7 +4,7 @@
 ?>
     <!-- Verzend formulier -->
     <div class="container">
-        <form class="needs-validation" method="post">
+        <form class="needs-validation" action = "create.process.php" method="post">
             <div class="form-row">
                 <div style="margin-top: 50px" class="col-md-12 mb-4">
                     <label for="validationCustom01">Voornaam</label>
@@ -23,7 +23,7 @@
                     <input type="text" class="form-control" id="klantplaats" name="klantplaats" placeholder="Voer uw plaats hier in">
                 </div>
             </div>
-            <button class="btn btn-success" type="submit">Verzenden</button>
+            <button class="btn btn-success" name="submit" type="submit">Verzenden</button>
         </form>
      </div>
 <?php
