@@ -18,6 +18,7 @@ class Post extends Dbh{
 
     header('location: read.php');
   }
+  
   public function editKlant($klantid){
 
     $sql = "SELECT * FROM klantgegevens WHERE klantid = :klantid";
