@@ -1,6 +1,10 @@
 <?php
     include 'includes/class-autoload.inc.php';
     require_once 'templates/header.php';
+<<<<<<< HEAD
+=======
+
+>>>>>>> c1240f7bf442984a034ff9b3e7398b0f05aa71b1
 ?>
 
     <!-- Achtergrond foto -->
