@@ -1,6 +1,6 @@
 <?php
     include 'includes/class-autoload.inc.php';
-    $klant = new Read;
+    $klant = new Post;
 
     if(isset($_POST['submit'])){
         $klantnaam = $_POST['klantnaam'];

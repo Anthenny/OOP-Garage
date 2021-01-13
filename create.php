@@ -4,7 +4,7 @@
 ?>
     <!-- Verzend formulier -->
     <div class="container">
-        <form class="needs-validation" action = "create.process.php" method="post">
+        <form class="needs-validation" action = "post.process.php" method="post">
             <div class="form-row">
                 <div style="margin-top: 50px" class="col-md-12 mb-4">
                     <label for="validationCustom01">Voornaam</label>

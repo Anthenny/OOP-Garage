@@ -1,6 +1,8 @@
 <?php
 
-class Read extends Dbh{
+class Post extends Dbh{
+
+   private $klantid;
 
   public function getKlant(){
     $sql = "SELECT * FROM klantgegevens";
@@ -30,11 +32,14 @@ class Read extends Dbh{
     $stmt->execute([$klantnaam, $klantadres, $klantpostcode, $klantplaats]);
 
     header('location: read.php');
-
   }
+  public function editKlant($klantid){
 
-
-
+    $sql = "SELECT * FROM klantgegevens WHERE klantid = :klantid";
+    $stmt = $this->connect()->prepare($sql);
+    $stmt->execute(["klantid"=> $klantid]);
+    $klanten = $stmt->fetch();
+    // header('location: read.php');
+  }
+// Gebruik Getklant om direct te informatie te pakken uit het formulier en skip zo dubbele codes en update het daarna
 }
-
- 
