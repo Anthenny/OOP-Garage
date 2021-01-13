@@ -1,13 +1,6 @@
 <?php
     include 'includes/class-autoload.inc.php';
     require_once 'templates/header.php';
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> c1240f7bf442984a034ff9b3e7398b0f05aa71b1
->>>>>>> 0aa8cb507700a554d58e651f2d3f32d8726cc8ed
 ?>
 
     <!-- Achtergrond foto -->
@@ -26,12 +19,6 @@
         </div>
     </header>
     <!-- Einde achtergrond foto -->
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> 0aa8cb507700a554d58e651f2d3f32d8726cc8ed
 <?php
     require_once 'templates/footer.php';
-?>
 ?>
