@@ -17,10 +17,9 @@
         </button>
         <div class="collapse navbar-collapse" id="expandme" >
             <div class="navbar-nav">
-              <a href="create.php" class="nav-item nav-link">Create</a>
-              <a href="read.php" class="nav-item nav-link">Read</a>
-              <a href="#" class="nav-item nav-link">Update</a>
-              <a href="#" class="nav-item nav-link">Delete</a>
+              <a href="create.php" class="nav-item nav-link">Maak klant aan</a>
+              <a href="read.php" class="nav-item nav-link">Klanten</a>
+              <a href="search.php" class="nav-item nav-link">Search</a>
               <a href="#" class="nav-item nav-link">Login</a>
               <a href="#" class="nav-item nav-link">Auto</a>
             </div>
