@@ -10,8 +10,3 @@
 
         $klant->addKlant($klantnaam, $klantadres, $klantpostcode, $klantplaats);
     }
-
-
-
-
-
