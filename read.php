@@ -1,14 +1,6 @@
 <?php
     include 'includes/class-autoload.inc.php';
     require_once 'templates/header.php';
-    
-    // $obj = new Post();
-    // //fetch record
-    // if (isset($_GET['id'])){
-    //     $id = $_GET['id'];
-    //     $myRecord = $obj->editKlant($id);
-    //     print_r($myRecord);
-    // }
 
     $klanten = new Post();
     echo "<tabel>";
@@ -22,11 +14,10 @@
             echo "</br></div>";
              echo "<div class='container'>
             <button style='margin-top: -30px;'type='button' class='btn btn-success'><a style='color: white; text-decoration: none;' 
-            href=editForm.php?id=$klant[klantid]>Bewerken</a></button>";
-            echo "<button style='margin-left: 10px; margin-top: -30px;' type='button' class='btn btn-danger'><a style='color: white; text-decoration: none;' href='post.process.php?id=$klant[klantid]'>Verwijderen</a></button></div>";
+            href=editForm.php?klantid=$klant[klantid]>Bewerken</a></button>";
+            echo "<button style='margin-left: 10px; margin-top: -30px;' type='button' class='btn btn-danger'><a style='color: white; text-decoration: none;' href='post.process.php?klantid=$klant[klantid]&send=del'>Verwijderen</a></button></div>";
             echo "</br>";
-    }
-    
+    }    
     echo "</tabel>";
     echo "<div class='container'><style'margin-top: 20px; margin-bottom: 60px; margin-left: 20px' type='button' class='btn btn-primary'><a style='color: white; text-decoration: none' href='public/auto.html'>Terug naar menu</a></style></div>";   
 

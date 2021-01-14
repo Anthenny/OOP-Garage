@@ -1,7 +1,6 @@
 <?php
 class Post extends Dbh{
 
-
   public function getKlant(){
     $sql = "SELECT * FROM klantgegevens";
     $stmt = $this->connect()->prepare($sql);
@@ -18,12 +17,24 @@ class Post extends Dbh{
     $stmt->execute([$klantnaam, $klantadres, $klantpostcode, $klantplaats]);
     header('location: read.php');
   }
-  public function editKlant($id){
-      $sql = "SELECT * FROM klantgegevens WHERE id=$id";
-      $stmt = $this->connect()->query($sql);
-      if($stmt->num_rows > 0){
-        $klant = $stmt->fetch();
-        return $klant;
-      }
+
+  public function editKlant($klantid){
+      $sql = "SELECT * FROM klantgegevens WHERE klantid=?";
+      $stmt = $this->connect()->prepare($sql);
+      $stmt->execute([$klantid]);
+      $result = $stmt->fetch();
+      return $result;
+    }
+    public function updateKlant($klantnaam, $klantadres, $klantpostcode, $klantplaats, $klantid){
+      $sql = "UPDATE klantgegevens SET klantnaam = ?, klantadres = ?, klantpostcode = ?, klantplaats = ? WHERE klantid = ?";
+      $stmt = $this->connect()->prepare($sql);
+      $stmt->execute([$klantnaam, $klantadres, $klantpostcode, $klantplaats, $klantid]);
+      header('location: read.php');
+    }
+    public function deleteKlant($klantid){
+      $sql = "DELETE FROM klantgegevens WHERE klantid = ?";
+      $stmt = $this->connect()->prepare($sql);
+      $stmt->execute([$klantid]);
+      header('location: read.php');
     }
   }

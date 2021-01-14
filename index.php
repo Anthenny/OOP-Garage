@@ -2,7 +2,6 @@
     include 'includes/class-autoload.inc.php';
     require_once 'templates/header.php';
 ?>
-
     <!-- Achtergrond foto -->
     <header>
         <div class="overlay"></div>
