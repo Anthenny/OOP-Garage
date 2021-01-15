@@ -2,7 +2,7 @@
     include 'includes/class-autoload.inc.php';
     require_once 'templates/header.php';
 
-    $klanten = new Post;
+    $klanten = new Klant;
     $klant = $klanten->editKlant($_GET['klantid']);
 
     $klantid = $klant['klantid'];

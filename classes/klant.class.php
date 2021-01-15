@@ -1,5 +1,5 @@
 <?php
-class Post extends Dbh{
+class Klant extends Dbh{
 
   public function getKlant(){
     $sql = "SELECT * FROM klantgegevens";

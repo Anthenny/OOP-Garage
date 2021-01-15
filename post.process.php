@@ -1,6 +1,6 @@
 <?php
     include 'includes/class-autoload.inc.php';
-    $klant = new Post;
+    $klant = new Klant;
     
     if(isset($_POST['update'])){
         $klantid = $_GET['klantid'];

@@ -2,7 +2,7 @@
     include 'includes/class-autoload.inc.php';
     require_once 'templates/header.php';
 
-    $klanten = new Post();
+    $klanten = new Klant();
     echo "<tabel>";
     foreach($klanten->getKlant() as $klant){
             echo "<tr>"; 

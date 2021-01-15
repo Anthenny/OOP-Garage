@@ -8,7 +8,7 @@
         $errors = $validation->validateForm(); 
             if(!$errors){
             
-                $klant = new Post;
+                $klant = new Klant;
 
                 $klantnaam = $_POST['klantnaam'];
                 $klantadres = $_POST['klantadres'];
