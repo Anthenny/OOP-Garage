@@ -1,6 +1,6 @@
 <?php
     include 'includes/class-autoload.inc.php';
-    require_once 'templates/header1.php';
+    require_once 'templates/header2.php';
 
     $autos = new Auto();
     echo "<tabel>";
