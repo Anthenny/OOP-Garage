@@ -1,6 +1,6 @@
 <?php
     include 'includes/class-autoload.inc.php';
-    require_once 'templates/header.php';
+    require_once 'templates/header1.php';
 
     $klanten = new Klant;
     $klant = $klanten->editKlant($_GET['klantid']);

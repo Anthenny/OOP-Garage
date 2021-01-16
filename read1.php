@@ -1,6 +1,6 @@
 <?php
     include 'includes/class-autoload.inc.php';
-    require_once 'templates/header.php';
+    require_once 'templates/header1.php';
 
     $klanten = new Klant();
     echo "<tabel>";
@@ -14,11 +14,11 @@
             "</br></div>" .
              "<div class='container'>
             <button style='margin-top: -30px;'type='button' class='btn btn-success'><a style='color: white; text-decoration: none;' 
-            href=editForm.php?klantid=$klant[klantid]>Bewerken</a></button>".
-             "<button style='margin-left: 10px; margin-top: -30px;' type='button' class='btn btn-danger'><a style='color: white; text-decoration: none;' href='klant.process.php?klantid=$klant[klantid]&send=del'>Verwijderen</a></button></div>".
-            "</br>";
+            href=editForm1.php?klantid=$klant[klantid]>Bewerken</a></button>";
+            echo "<button style='margin-left: 10px; margin-top: -30px;' type='button' class='btn btn-danger'><a style='color: white; text-decoration: none;' href='post.process.php?klantid=$klant[klantid]&send=del'>Verwijderen</a></button></div>";
+            echo "</br>";
     }    
     echo "</tabel>";
-    echo "<div class='container'><style'margin-top: 20px; margin-bottom: 60px; margin-left: 20px' type='button' class='btn btn-primary'><a style='color: white; text-decoration: none' href='public/auto.html'>Terug naar menu</a></style></div>";   
+    echo "<div class='container'><style'margin-top: 20px; margin-bottom: 60px; margin-left: 20px' type='button' class='btn btn-primary'><a style='color: white; text-decoration: none' href='read1.php'>Terug naar menu</a></style></div>";   
 
     require_once 'templates/footer.php';
