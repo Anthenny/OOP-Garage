@@ -1,7 +1,7 @@
 <?php
 class Klant extends Dbh{
 
-  public function getKlant(){
+  public function getKlanten(){
     $sql = "SELECT * FROM klantgegevens";
     $stmt = $this->connect()->prepare($sql);
     $stmt->execute();
