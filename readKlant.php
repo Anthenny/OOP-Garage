@@ -1,6 +1,6 @@
 <?php
     include 'includes/class-autoload.inc.php';
-    require_once 'templates/header1.php';
+    require_once 'templates/header2.php';
 
     $klanten = new Klant();
     echo "<tabel>";
@@ -14,8 +14,8 @@
             "</br></div>" .
              "<div class='container'>
             <button style='margin-top: -30px;'type='button' class='btn btn-success'><a style='color: white; text-decoration: none;' 
-            href=editForm1.php?klantid=$klant[klantid]>Bewerken</a></button>";
-            echo "<button style='margin-left: 10px; margin-top: -30px;' type='button' class='btn btn-danger'><a style='color: white; text-decoration: none;' href='post.process.php?klantid=$klant[klantid]&send=del'>Verwijderen</a></button></div>";
+            href=editFormKlant.php?klantid=$klant[klantid]>Bewerken</a></button>";
+            echo "<button style='margin-left: 10px; margin-top: -30px;' type='button' class='btn btn-danger'><a style='color: white; text-decoration: none;' href='klant.process.php?klantid=$klant[klantid]&send=del'>Verwijderen</a></button></div>";
             echo "</br>";
     }    
     echo "</tabel>";

@@ -15,7 +15,7 @@ class Klant extends Dbh{
     $sql = "INSERT INTO klantgegevens(klantnaam, klantadres, klantpostcode, klantplaats) VALUES (?, ?, ?, ?)";
     $stmt = $this->connect()->prepare($sql);
     $stmt->execute([$klantnaam, $klantadres, $klantpostcode, $klantplaats]);
-    header('location: read1.php');
+    header('location: readKlant.php');
   }
 
   public function editKlant($klantid){
@@ -29,12 +29,12 @@ class Klant extends Dbh{
       $sql = "UPDATE klantgegevens SET klantnaam = ?, klantadres = ?, klantpostcode = ?, klantplaats = ? WHERE klantid = ?";
       $stmt = $this->connect()->prepare($sql);
       $stmt->execute([$klantnaam, $klantadres, $klantpostcode, $klantplaats, $klantid]);
-      header('location: read1.php');
+      header('location: readKlant.php');
     }
     public function deleteKlant($klantid){
       $sql = "DELETE FROM klantgegevens WHERE klantid = ?";
       $stmt = $this->connect()->prepare($sql);
       $stmt->execute([$klantid]);
-      header('location: read1.php');
+      header('location: readKlant.php');
     }
   }
