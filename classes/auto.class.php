@@ -32,5 +32,12 @@ class Auto extends Dbh{
         $stmt->execute([$automerk, $autotype, $autokmstand, $klantid, $autokenteken]);
         header('location: readAuto.php');
     }
+
+    public function deleteAuto($autokenteken){
+      $sql = "DELETE FROM autogegevens WHERE autokenteken = ?";
+      $stmt = $this->connect()->prepare($sql);
+      $stmt->execute([$autokenteken]);
+      header('location: readAuto.php');
+    }
 }
 ?>

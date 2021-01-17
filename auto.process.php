@@ -11,5 +11,8 @@ if(isset($_POST['update'])){
     $klantid = $_POST['klantid'];
 
     $auto->updateAuto($automerk, $autotype, $autokmstand, $klantid, $autokenteken);
-};
-?>
+} else if($_GET['send'] ==='del'){
+    $autokenteken = $_GET['autokenteken'];
+
+    $auto->deleteAuto($autokenteken);
+}
