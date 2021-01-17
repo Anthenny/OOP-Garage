@@ -16,3 +16,4 @@ if(isset($_POST['update'])){
 
     $auto->deleteAuto($autokenteken);
 }
+?>

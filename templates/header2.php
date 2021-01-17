@@ -20,8 +20,8 @@
             </button>
             <div class="collapse navbar-collapse" id="expandme">
                 <div class="navbar-nav">
-                    <a href="createAuto.php" class="nav-item nav-link">Create</a>
-                    <a href="readAuto.php" class="nav-item nav-link">Read</a>
+                    <a href="createAuto.php" class="nav-item nav-link">Maak Auto aan</a>
+                    <a href="readAuto.php" class="nav-item nav-link">Auto's</a>
                     <a href="#" class="nav-item nav-link">Login</a>
                     <a href="index.php" class="nav-item nav-link">Klant</a>
                 </div>

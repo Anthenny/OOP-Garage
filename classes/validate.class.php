@@ -73,3 +73,4 @@
             $this->errors[$key] = $val;
         }
     }
+?>

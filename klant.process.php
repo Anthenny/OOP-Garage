@@ -15,3 +15,4 @@
 
         $klant->deleteKlant($klantid);
     }
+?>

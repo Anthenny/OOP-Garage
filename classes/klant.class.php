@@ -1,5 +1,5 @@
 <?php
-class Klant extends Dbh{
+class Klant extends Dbh {
 
   public function getKlanten(){
     $sql = "SELECT * FROM klantgegevens";
@@ -24,17 +24,21 @@ class Klant extends Dbh{
       $stmt->execute([$klantid]);
       $result = $stmt->fetch();
       return $result;
-    }
-    public function updateKlant($klantnaam, $klantadres, $klantpostcode, $klantplaats, $klantid){
+  }
+
+  public function updateKlant($klantnaam, $klantadres, $klantpostcode, $klantplaats, $klantid){
       $sql = "UPDATE klantgegevens SET klantnaam = ?, klantadres = ?, klantpostcode = ?, klantplaats = ? WHERE klantid = ?";
       $stmt = $this->connect()->prepare($sql);
       $stmt->execute([$klantnaam, $klantadres, $klantpostcode, $klantplaats, $klantid]);
       header('location: readKlant.php');
-    }
-    public function deleteKlant($klantid){
+  }
+
+  public function deleteKlant($klantid){
       $sql = "DELETE FROM klantgegevens WHERE klantid = ?";
       $stmt = $this->connect()->prepare($sql);
       $stmt->execute([$klantid]);
       header('location: readKlant.php');
-    }
   }
+
+}
+?>

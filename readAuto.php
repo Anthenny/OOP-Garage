@@ -19,7 +19,7 @@
             echo "</br>";
     }    
     echo "</tabel>";
-    echo "<div class='container'><style'margin-top: 20px; margin-bottom: 60px; margin-left: 20px' type='button' class='btn btn-primary'><a style='color: white; text-decoration: none' href='readAuto.php'>Terug naar menu</a></style></div>";   
+    echo "<div class='container'><style'margin-top: 20px; margin-bottom: 60px; margin-left: 20px' type='button' class='btn btn-primary'><a style='color: white; text-decoration: none' href='indexAuto.php'>Terug naar menu</a></style></div>";   
 
     require_once 'templates/footer.php';
 ?>

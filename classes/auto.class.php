@@ -1,6 +1,6 @@
 <?php
 
-class Auto extends Dbh{
+class Auto extends Dbh {
 
     public function getAuto(){
       $sql = "SELECT * FROM autogegevens";
@@ -16,6 +16,7 @@ class Auto extends Dbh{
       $sql = "INSERT INTO autogegevens(autokenteken, automerk, autotype, autokmstand, klantid) VALUES (?, ?, ?, ?, ?)";
       $stmt = $this->connect()->prepare($sql);
       $stmt->execute([$autokenteken, $automerk, $autotype, $autokmstand, $klantid]);
+      header('location: readAuto.php');
     }
 
     public function editAuto($autokenteken){
