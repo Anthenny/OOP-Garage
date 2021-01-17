@@ -14,7 +14,7 @@
             "</br></div>" .
              "<div class='container'>
             <button style='margin-top: -30px;'type='button' class='btn btn-success'><a style='color: white; text-decoration: none;' 
-            href=editFormKlant.php?klantid=$auto[klantid]>Bewerken</a></button>";
+            href=editFormAuto.php?autokenteken=$auto[autokenteken]>Bewerken</a></button>";
             echo "<button style='margin-left: 10px; margin-top: -30px;' type='button' class='btn btn-danger'><a style='color: white; text-decoration: none;' href='klant.process.php?klantid=$auto[klantid]&send=del'>Verwijderen</a></button></div>";
             echo "</br>";
     }    

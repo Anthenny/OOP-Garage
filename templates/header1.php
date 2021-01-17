@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-      <link rel="stylesheet" href="style.scss">
+      <link rel="stylesheet" href="style.css">
       <title>CRUD | Klant</title>
    </head>
    <body>
@@ -19,7 +19,7 @@
                <div class="navbar-nav">
                   <a href="createKlant.php" class="nav-item nav-link">Maak klant aan</a>
                   <a href="readKlant.php" class="nav-item nav-link">Klanten</a>
-                  <a href="#" class="nav-item nav-link">Login</a>
+                  <a href="login.php" class="nav-item nav-link">Login</a>
                   <a href="indexAuto.php" class="nav-item nav-link">Auto</a>
                </div>
             </div>
