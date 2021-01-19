@@ -1,6 +1,6 @@
 <?php 
 
-    class Validate{
+    class ValidateKlant{
         private $data;
         private $errors = [];
         private static $fields = ['klantnaam', 'klantadres', 'klantplaats', 'klantpostcode'];

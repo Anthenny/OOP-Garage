@@ -1,10 +1,11 @@
 <?php
     include 'includes/class-autoload.inc.php';
     require_once 'templates/header1.php';
+    require_once 'classes/validateKlant.class.php';
 
     if(isset($_POST['submit'])){
         //validate entries
-        $validation = new Validate($_POST);
+        $validation = new ValidateKlant($_POST);
         $errors = $validation->validateForm(); 
             if(!$errors){
             
