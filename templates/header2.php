@@ -12,7 +12,7 @@
 
 <body>
     <!-- Navigatie menu -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="index.php">Garage</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#expandme">

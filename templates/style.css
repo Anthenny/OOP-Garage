@@ -51,30 +51,10 @@ header .overlay {
   z-index: 1;
 }
 
-@media (pointer: coarse) and (hover: none) {
-  header {
-    background: url("../assets/videos/backgroundvideo.mp4") black no-repeat center center scroll;
-  }
-
-  header video {
-    display: none;
-  }
-}
 
 :root {
   --input-padding-x: 1.5rem;
   --input-padding-y: 0.75rem;
-}
-
-.login,
-.image {
-  min-height: 100vh;
-}
-
-.bg-image {
-  background-image: url("../assets/car.jpg");
-  background-size: cover;
-  background-position: center;
 }
 
 .login-heading {
