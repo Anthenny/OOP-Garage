@@ -29,14 +29,13 @@ class User extends Dbh {
             $stmt->execute([$name, $pwd]);
 
             $user = $stmt->fetch(PDO::FETCH_ASSOC);
-            print_r($user);
+            // print_r($user);
 
             if($user['userName']){
                 if($user['userPwd']){
                     header('location: succes.php');
                 }
                 }else{
-                    
                     header('location: login.php?error=verkeerdelogin');
                 }
         }
