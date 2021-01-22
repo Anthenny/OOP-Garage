@@ -5,9 +5,9 @@
 <div class="container">
   <div style="margin-top: 50px" class="jumbotron">
     <h1 class="display-4">Welkom bij uw dashboard</h1>
-    <p class="lead">Dit is een beheersysteem van het garage</p>
+    <p class="lead">Dit is het beheersysteem van het garage</p>
     <hr class="my-4">
-    <p>U kan vanaf hier autos's en klanten beheren</p>
+    <p>U kunt vanaf hier autos's en klanten beheren</p>
     <p class="lead">
     </p>
   </div>
