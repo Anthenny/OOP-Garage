@@ -19,7 +19,7 @@
       <div class="card-body">
         <h5 class="card-title">Gegevens toevoegen</h5>
         <p class="card-text">Hier kunt u auto's of klanten aanmaken</p>
-        <a href="createAuto.php" class="btn btn-primary">Create</a>
+        <a href="createAuto.php" class="btn btn-success">Create</a>
       </div>
     </div>
     <div class="col-sm">
@@ -33,14 +33,14 @@
       <div class="card-body">
         <h5 class="card-title">Gegevens wijzigen</h5>
         <p class="card-text">Hier kunt u auto's of klanten wijzigen</p>
-        <a href="readAuto.php" class="btn btn-primary">Update</a>
+        <a href="readAuto.php" class="btn btn-secondary">Update</a>
       </div>
     </div>
     <div class="col-sm">
       <div class="card-body">
         <h5 class="card-title">Gegevens verwijderen</h5>
         <p class="card-text">Hier kunt u auto's of klanten verwijderen</p>
-        <a href="readAuto.php" class="btn btn-primary">Delete</a>
+        <a href="readAuto.php" class="btn btn-danger">Delete</a>
       </div>
     </div>
   </div>
