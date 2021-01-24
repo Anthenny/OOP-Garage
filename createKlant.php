@@ -3,6 +3,7 @@
     require_once 'templates/header1.php';
     require_once 'classes/validateKlant.class.php';
 
+    // Als er geklikt is op submit voert die de validatie uit en checkt die voor errors als die er niet zijn voert die de methode uit.
     if(isset($_POST['submit'])){
         //validate entries
         $validation = new ValidateKlant($_POST);

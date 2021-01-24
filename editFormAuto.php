@@ -1,7 +1,7 @@
 <?php
     include 'includes/class-autoload.inc.php';
     require_once 'templates/header2.php';
-
+    // Declareer de class.
     $autos = new Auto;
     $auto = $autos->editAuto($_GET['autokenteken']);
 

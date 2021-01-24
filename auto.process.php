@@ -3,6 +3,7 @@
 include 'includes/class-autoload.inc.php';
 $auto = new Auto;
 
+// Als er geklikt is op update slaat die de informatie op en voert die de method updateAuto uit.
 if(isset($_POST['update'])){
     $autokenteken = $_GET['autokenteken'];
     $automerk = $_POST['automerk'];
