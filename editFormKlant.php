@@ -2,6 +2,7 @@
     include 'includes/class-autoload.inc.php';
     require_once 'templates/header1.php';
 
+    // Declareer de class.
     $klanten = new Klant;
     $klant = $klanten->editKlant($_GET['klantid']);
 

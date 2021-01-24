@@ -21,6 +21,7 @@
     require_once 'classes/uservalidator.class.php';
     require_once 'templates/header1.php';
 
+    // Als er op de login knop is ingedrukt voert die validatie uit en vervolgens methode.
     if(isset($_POST['signIn'])){
       //validate entries
       $validation = new RegistratieValidator($_POST);

@@ -3,6 +3,7 @@
     require_once 'templates/header2.php';
     require_once 'classes/validateAuto.class.php';
 
+    // Als er geklikt is voert die de validatie uit vervolgens checkt die of errors niet waar zijn en voert die de create method uit.
     if(isset($_POST['submit'])){
         //validate entries
         $validation = new ValidateAuto($_POST);

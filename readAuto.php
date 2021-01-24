@@ -2,6 +2,7 @@
     include 'includes/class-autoload.inc.php';
     require_once 'templates/header2.php';
 
+    //Declareer de class en gebruik de informatie binnen deze class om de informatie uit de database weer te geven.
     $autos = new Auto();
     echo "<tabel>";
     foreach($autos->getAuto() as $auto){
